@@ -129,7 +129,8 @@ dmypy.json
 .pyre/
 
 
-
+static/
+staticfiles/
 
 *.exe
 /utils
