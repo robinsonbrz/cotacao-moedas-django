@@ -36,12 +36,12 @@ Portfólio com com vários apps implementados com os frameworks Django, FastAPI 
     - [ ] Dólar é a base.
     - [ ] Consultar por data de início e de fim para  qualquer período de tempo.
     - [ ] Período máximo de consulta 5 dias úteis.
-    - [ ] Persistência em banco de dados.
+    - [x] Persistência em banco de dados.
     - [ ] Deve ser possível variar as moedas (real, euro e iene).
     - [ ] Api de consulta https://www.vatcomply.com/documentation.
-    - [X] O código deve ser desenvolvido utilizando um repositório git no seu perfil do Github ou BitBucket.
+    - [x] O código deve ser desenvolvido utilizando um repositório git no seu perfil do Github ou BitBucket.
     - [x] Backend: deve ser implementado em python utilizando o framework django.
-    - [X] Frontend: o único requisito é usar o highcharts para apresentação dos dados.
+    - [x] Frontend: o único requisito é usar o highcharts para apresentação dos dados.
     - [ ] Não precisa de login, usuário, autenticação ou qualquer coisa. Só a página carregando o gráfico.
     - [ ] Uso de Orientação a Objetos.
     - [ ] Entendimento de práticas de desenvolvimento como testes automatizados.
