@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'whitenoise.runserver_nostatic',
     'django.contrib.postgres',
     'cotacao_grafico',
 ]
@@ -63,7 +64,9 @@ ROOT_URLCONF = 'proj_cot_moedas.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,6 +80,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'proj_cot_moedas.wsgi.application'
+
 
 
 # Database
@@ -101,8 +105,6 @@ DATABASES = {
         'ssl_require': True,
     }
 }
-print('/n/n/n/n/n/')
-print(DATABASES)
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -140,8 +142,18 @@ USE_TZ = True
 
 # STATIC_URL = 'static/'
 
+
+STATICFILES_STORAGE = "django.contrib.staticfiles.storage.ManifestStaticFilesStorage"
+
+
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = "/static/"
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+
 django_heroku.settings(locals())
 
 # Default primary key field type
@@ -150,5 +162,3 @@ django_heroku.settings(locals())
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-print('/n/n/n/n/n/')
-print(DATABASES)
