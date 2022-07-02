@@ -31,8 +31,8 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = True if os.environ.get('DEBUG') == '1' else False
 
 ALLOWED_HOSTS = ['*']
-if not DEBUG:
-    ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(' ')
+# if not DEBUG:
+#    ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(' ')
 
 
 # Application definition
