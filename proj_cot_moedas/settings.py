@@ -98,8 +98,11 @@ DATABASES = {
         'PASSWORD': os.getenv('PASSWORD'),
         'PORT': os.getenv('PORT'),
         'HOST': os.getenv('HOST'),
+        'conn_max_age': 600,
+        'ssl_require': True,
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
