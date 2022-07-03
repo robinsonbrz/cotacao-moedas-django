@@ -21,15 +21,12 @@ class Precos(models.Model):
         dict1 = dict()
         precos = Precos.objects.filter(moeda=moeda).filter(data__range=[start_date, end_date]).order_by('data')
         for preco in precos:
-            listaPrecos.append(preco.preco)
-            listaDatas.append(preco.data)
-
+            listaPrecos.append(round(preco.preco,2))
+            listaDatas.append(preco.data.strftime("%d-%m-%Y"))
         dict1['moeda'] = moeda
         dict1['precos'] = listaPrecos
-        dict1['data'] = listaDatas
-
+        dict1['datas'] = listaDatas
         return dict1
-
 
     def __str__(self):
         return str(self.data)  + ' - ' + self.moeda + ' - ' + str(self.preco)
