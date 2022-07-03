@@ -6,7 +6,7 @@ from .models import Precos
 
 
 class PrecosAdmin(admin.ModelAdmin):
-    list_display = ("preco", "moeda",  "data")
+    list_display = ("preco", "moeda", "data")
     list_display_links = ("preco", "moeda", "data")
     # adiciona filtro area administrativa Contatos
 

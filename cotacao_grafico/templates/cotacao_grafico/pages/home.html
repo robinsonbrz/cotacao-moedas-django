@@ -3,11 +3,11 @@
 {% block titulo %}Cotação Moedas{% endblock titulo %}
 {% block content %}
 
-
-
-   <div class="container">
-      <h1 class="text-center m-5 p-2">Cotação de Moedas</h1>
-   </div>
+<div class="jumbotron-fluid">
+   <div class="container text-center">
+      <p class="display-5 text-danger">{{context.erro|safe}}</p>
+   </div>   
+</div>   
 
    <figure class="highcharts-figure">
       <div id="container"></div>
@@ -15,6 +15,51 @@
          Cotações na base U$D 
       </p>
    </figure>
+
+<div class="card m-5 p-5" >
+   <div class="container">
+      <!--Search box form moedas e período  Início -->
+      <form action="#">
+         <div class="form-row">
+            
+            <div class="form-group col-md-4">
+               <label for="start">Inicio:</label><br>
+               
+               <input type="date" id="inicio" name="inicio"
+               value={{context.inicio|safe}}>
+            </div>
+            
+            <div class="form-group col-md-4">
+               
+               <label for="start">Fim:</label><br>
+               
+               <input type="date" id="fim" name="fim"
+               value={{context.fim|safe}}>
+            </div>
+            
+            <div class="form-group col-md-4">
+               <label for="moeda">Moeda:</label><br>
+               <select name="moeda" id="moeda" class="form-control">
+                        <option value="BRL">BRL</option>
+                        <option value="EUR">EUR</option>
+                        <option value="JPY">JPY</option>
+               </select>
+            </div>
+
+            <div class=" col-md-4">
+               <button type="submit" class="btn btn-primary">Selecionar</button>
+            </div>
+         </div>
+      </form>
+      <!--Search box form moedas e período  Fim-->
+   </div>
+</div>
+
+
+
+
+
+
    <!--{{context.precos}}
    {{context.datas}}-->
 
