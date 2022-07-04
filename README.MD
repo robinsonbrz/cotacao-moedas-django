@@ -37,18 +37,18 @@ Portfólio com com vários apps implementados com os frameworks Django, FastAPI 
   <br><br><br>
 
 ## Objetivo
-    - [ ] Cotações do dólar versus real, euro e iene(JPY).
-    - [ ] Dólar é a base.
-    - [ ] Consultar por data de início e de fim para  qualquer período de tempo.
-    - [ ] Período máximo de consulta 5 dias úteis.
+    - [x] Cotações do dólar versus real, euro e iene(JPY).
+    - [x] Dólar é a base.
+    - [x] Consultar por data de início e de fim para  qualquer período de tempo.
+    - [x] Período máximo de consulta 5 dias úteis.
     - [x] Persistência em banco de dados.
-    - [ ] Deve ser possível variar as moedas (real, euro e iene).
-    - [ ] Api de consulta https://www.vatcomply.com/documentation.
+    - [x] Deve ser possível variar as moedas (real, euro e iene).
+    - [x] Api de consulta https://www.vatcomply.com/documentation.
     - [x] O código deve ser desenvolvido utilizando um repositório git no seu perfil do Github ou BitBucket.
     - [x] Backend: deve ser implementado em python utilizando o framework django.
     - [x] Frontend: o único requisito é usar o highcharts para apresentação dos dados.
     - [x] Não precisa de login, usuário, autenticação ou qualquer coisa. Só a página carregando o gráfico.
-    - [ ] Uso de Orientação a Objetos.
+    - [x] Uso de Orientação a Objetos.
     - [ ] Entendimento de práticas de desenvolvimento como testes automatizados.
     - [x] utilização correta do controle de versão.
     - [x] Deploy no Heroku.
