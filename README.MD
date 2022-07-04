@@ -61,7 +61,9 @@ Portfólio com com vários apps implementados com os frameworks Django, FastAPI 
 
 
 <br>
+
 _______________________
+
 
 
 <br>

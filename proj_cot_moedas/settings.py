@@ -86,14 +86,23 @@ WSGI_APPLICATION = 'proj_cot_moedas.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# PostgreSql .env
+# PG_LOCAL 1 = local  
+# PG_LOCAL 0 = remoto
+local = ''
+if os.getenv('PG_LOCAL') == '1':
+    local = '_LOCAL'
+else:
+    local = ''
+
 DATABASES = {
     'default': {
-        'ENGINE': os.getenv('ENGINE'),
-        'NAME': os.getenv('NAME'),
-        'USER': os.getenv('USER'),
-        'PASSWORD': os.getenv('PASSWORD'),
-        'PORT': os.getenv('PORT'),
-        'HOST': os.getenv('HOST'),
+        'ENGINE': os.getenv(f'ENGINE{local}'),
+        'NAME': os.getenv(f'NAME{local}'),
+        'USER': os.getenv(f'USER{local}'),
+        'PASSWORD': os.getenv(f'PASSWORD{local}'),
+        'PORT': os.getenv(f'PORT{local}'),
+        'HOST': os.getenv(f'HOST{local}'),
         'conn_max_age': 600,
         'ssl_require': True,
     }
