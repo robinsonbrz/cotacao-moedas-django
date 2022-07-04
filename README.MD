@@ -1,9 +1,12 @@
 # Desafio de Projeto - Framework Django 
 ## Consulta de API de cotação de moedas e exibição no formato gráfico
 
-Heroku Deploy [https://moedas-app.herokuapp.com/](https://moedas-app.herokuapp.com/)
+Heroku Deploy 
+
+[Exibição formato gráfico](https://moedas-app.herokuapp.com/)
 
 
+ [API Rest Django Consulta dos preços na BD](https://moedas-app.herokuapp.com/api/v1/precos/?inicio=2022-07-04&moeda=BRL)
 
 
 <br>
@@ -52,7 +55,7 @@ Portfólio com com vários apps implementados com os frameworks Django, FastAPI 
     - [ ] Entendimento de práticas de desenvolvimento como testes automatizados.
     - [x] utilização correta do controle de versão.
     - [x] Deploy no Heroku.
-    - [ ] Criar uma api para realizar leitura das cotações persistidas no banco de dados.
+    - [x] Criar uma api para realizar leitura das cotações persistidas no banco de dados.
 
 
 
