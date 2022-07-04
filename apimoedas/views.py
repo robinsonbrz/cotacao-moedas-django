@@ -7,7 +7,7 @@ from apimoedas.serializers import PrecosSerializer
 
 class PrecosAPIView(APIView):
     """
-    ***REMOVED***
+    API de Consulta de moedas - Robinson Enedino
     """
     def get(self, request):
 
