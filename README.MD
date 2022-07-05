@@ -52,7 +52,7 @@ Portfólio com com vários apps implementados com os frameworks Django, FastAPI 
     - [x] Frontend: o único requisito é usar o highcharts para apresentação dos dados.
     - [x] Não precisa de login, usuário, autenticação ou qualquer coisa. Só a página carregando o gráfico.
     - [x] Uso de Orientação a Objetos.
-    - [ ] Entendimento de práticas de desenvolvimento como testes automatizados.
+    - [x] Entendimento de práticas de desenvolvimento como testes automatizados.
     - [x] utilização correta do controle de versão.
     - [x] Deploy no Heroku.
     - [x] Criar uma api para realizar leitura das cotações persistidas no banco de dados.
