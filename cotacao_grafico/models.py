@@ -70,7 +70,6 @@ class Precos(models.Model):
                     Precos.objects.create(preco=valorBRL, moeda='BRL', data=dataPesquisa)
                     Precos.objects.create(preco=valorEUR, moeda='EUR', data=dataPesquisa)
                     Precos.objects.create(preco=valorJPY, moeda='JPY', data=dataPesquisa)
-                    # print(f"Não existe em {dataPesquisa}")
                     count += 1 
             else:
                 count +=1 
